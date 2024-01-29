@@ -20,7 +20,7 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import coil.annotation.ExperimentalCoilApi
 import coil.compose.rememberImagePainter
-import com.retbleed.techbook.ui.api.image.ImageViewModel
+import com.retbleed.techbook.utils.api.image.ImageViewModel
 
 
 @OptIn(ExperimentalCoilApi::class)

@@ -42,7 +42,7 @@ fun SplashScreenContent(navController: NavController) {
     ) {
         if (!isAnimationFinished) {
             LaunchedEffect(Unit) {
-                kotlinx.coroutines.delay(10000)
+                kotlinx.coroutines.delay(1000)
                 isAnimationFinished = true
                 navController.navigate("login")
             }

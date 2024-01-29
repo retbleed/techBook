@@ -6,7 +6,7 @@ import androidx.activity.compose.setContent
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.retbleed.techbook.ui.api.image.ImageViewModel
+import com.retbleed.techbook.utils.api.image.ImageViewModel
 import com.retbleed.techbook.ui.home.MainScreen
 import com.retbleed.techbook.ui.init.LoginScreen
 import com.retbleed.techbook.ui.init.SplashScreenContent
