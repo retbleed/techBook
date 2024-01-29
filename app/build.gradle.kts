@@ -62,10 +62,7 @@ dependencies {
     implementation("androidx.compose.material:material-icons-extended")
     implementation("androidx.navigation:navigation-compose:2.7.6")
     implementation(platform("androidx.compose:compose-bom:2023.08.00"))
-    implementation("androidx.room:room-runtime:2.6.1")
-    implementation("com.google.accompanist:accompanist-glide:0.20.0")
-    annotationProcessor("androidx.room:room-compiler:2.5.0")
-    ksp("androidx.room:room-compiler:2.5.0")
+    // implementation("com.google.accompanist:accompanist-glide:0.20.0")
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
     implementation("io.coil-kt:coil-compose:1.3.0")
@@ -79,4 +76,9 @@ dependencies {
     androidTestImplementation(platform("androidx.compose:compose-bom:2023.08.00"))
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
+
+    // Room
+    implementation("androidx.room:room-runtime:2.6.1")
+    annotationProcessor("androidx.room:room-compiler:2.5.0")
+    ksp("androidx.room:room-compiler:2.5.0")
 }

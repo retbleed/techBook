@@ -29,15 +29,17 @@ import com.retbleed.techbook.utils.api.image.ImageViewModel
 @OptIn(ExperimentalCoilApi::class)
 @Composable
 fun MainScreen(navController: NavController, viewModel: ImageViewModel) {
-    val images by remember { viewModel.images }
 
     LaunchedEffect(Unit) {
         viewModel.loadAndInsertData()
     }
 
+
+    /*
     LazyColumn() {
-        items(items = images) { image ->
-            ImageCard(image)
+        items(images) { image ->
+            ImageCard(images)
         }
     }
+    */
 }
