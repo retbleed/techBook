@@ -20,9 +20,10 @@ class MainActivity : ComponentActivity() {
             TechbookTheme {
                 val navController = rememberNavController()
                 NavHost(navController = navController, startDestination = "splash"){
-                    composable("splash"){ SplashScreenContent(navController = navController) }
+                    composable("splash"){ SplashScreenContent(navController) }
                     composable("login"){ LoginScreen(navController)}
                     composable("home"){ MainScreen(navController, imageViewModel)}
+                    composable("signup"){}
                 }
             }
         }

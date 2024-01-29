@@ -8,9 +8,6 @@ interface ImageDao {
     @Insert
     suspend fun insertImage(image: Image)
 
-    @Query("SELECT * FROM images WHERE userId = :userId")
-    suspend fun getImagesByUserId(userId: Long): List<Image>
-
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertImages(images: List<ImageItem>)
 }
